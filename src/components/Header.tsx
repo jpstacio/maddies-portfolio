@@ -4,12 +4,10 @@ export default function Header() {
   return (
     <header className="nav">
       <nav>
-        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
-          Home
-        </NavLink>
-        <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
-          About
-        </NavLink>
+        <NavLink to="/" end>Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </nav>
     </header>
   );
